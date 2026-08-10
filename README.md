@@ -2,9 +2,17 @@
 
 ### Multimodal Fusion of Pathology Foundation-Model Embeddings and Genomics for Tumor Origin Prediction
 
+**Histopathology + Genomics + Multimodal Fusion for Tumor Tissue-of-Origin Prediction**
+
 TRACE is a multimodal machine learning framework for tumor tissue-of-origin prediction that integrates histopathology foundation-model representations with somatic genomic features.
 
-Using The Cancer Genome Atlas (TCGA) for model development, the histopathology branch uses precomputed UNI2-h tile embeddings modeled with ABMIL, CLAM, and TransMIL. The genomic branch uses XGBoost trained on somatic mutation, copy-number alteration (CNA), and SBS96 trinucleotide-context features. Patient-level predictions from both modalities are integrated using logistic-regression stacking and externally validated using the Clinical Proteomic Tumor Analysis Consortium (CPTAC).
+Using **The Cancer Genome Atlas (TCGA)** for model development:
+
+- **Histopathology:** precomputed **UNI2-h** tile embeddings modeled with **ABMIL, CLAM, and TransMIL**
+- **Genomics:** **XGBoost** trained on somatic mutations, copy-number alterations (CNA), and SBS96 trinucleotide-context features
+- **Fusion:** patient-level predictions integrated using **logistic-regression stacking**
+
+TRACE is externally validated using the **Clinical Proteomic Tumor Analysis Consortium (CPTAC)**.
 
 ## Paper
 
