@@ -4,7 +4,7 @@
 
 TRACE is a multimodal machine learning framework for tumor tissue-of-origin prediction that integrates histopathology foundation-model representations with somatic genomic features.
 
-The framework combines H&E whole-slide image embeddings with mutation, copy-number alteration (CNA), and SBS96 genomic features. Histopathology is modeled using multiple-instance learning (MIL), genomic data are modeled using XGBoost, and predictions from both modalities are integrated through late multimodal fusion.
+The framework combines H&E whole-slide image embeddings with mutation, copy-number alteration (CNA), and SBS96 genomic features. Histopathology is modeled using multiple-instance learning (MIL), genomic data are modeled using XGBoost, and predictions from both modalities are integrated through stacked fusion. 
 
 TRACE is developed using The Cancer Genome Atlas (TCGA) with site-stratified five-fold cross-validation and independently evaluated using the Clinical Proteomic Tumor Analysis Consortium (CPTAC).
 
