@@ -4,39 +4,13 @@
 
 TRACE is a multimodal machine learning framework for tumor tissue-of-origin prediction that integrates histopathology foundation-model representations with somatic genomic features.
 
-The histopathology branch uses precomputed UNI2-h tile embeddings modeled with ABMIL, CLAM, and TransMIL. The genomic branch uses XGBoost trained on somatic mutation, copy-number alteration (CNA), and SBS96 trinucleotide-context features. Patient-level predictions from both modalities are integrated using late fusion, including logistic-regression stacking.
-
-TRACE is developed using The Cancer Genome Atlas (TCGA) with site-stratified five-fold cross-validation and independently evaluated using the Clinical Proteomic Tumor Analysis Consortium (CPTAC). The repository also includes SHAP-based genomic interpretability and genomic modality ablation analysis.
+Using The Cancer Genome Atlas (TCGA) for model development, the histopathology branch uses precomputed UNI2-h tile embeddings modeled with ABMIL, CLAM, and TransMIL. The genomic branch uses XGBoost trained on somatic mutation, copy-number alteration (CNA), and SBS96 trinucleotide-context features. Patient-level predictions from both modalities are integrated using logistic-regression stacking and externally validated using the Clinical Proteomic Tumor Analysis Consortium (CPTAC).
 
 ## Paper
 
 **TRACE: Multimodal Fusion of Pathology Foundation-Model Embeddings and Genomics for Tumor Origin Prediction**
 
 Currently under review.
-
-## Data
-
-### Training Data
-
-The Cancer Genome Atlas (TCGA)
-
-Genomic features include:
-
-- Somatic mutations
-- Copy-number alterations (CNA)
-- SBS96 trinucleotide-context features
-
-Histopathology is represented using precomputed UNI2-h pathology foundation-model tile embeddings.
-
-Model development and evaluation use site-stratified five-fold cross-validation to prevent patients from the same institution from appearing across multiple folds.
-
-### External Validation
-
-Clinical Proteomic Tumor Analysis Consortium (CPTAC)
-
-CPTAC mutation, CNA, SBS96, and pathology embedding data are processed independently and aligned to the TCGA-trained feature space.
-
-The trained TCGA genomic and histopathology models are applied to CPTAC without retraining on the external-validation cohort.
 
 ## Repository Structure
 
