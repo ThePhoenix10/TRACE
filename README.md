@@ -75,15 +75,6 @@ git clone https://github.com/ThePhoenix10/TRACE.git
 cd TRACE
 ```
 
-## Authors
-
-- Saicharan Vellanki — Issaquah High School
-- Paraic Kenny, PhD — Gundersen Medical Foundation
-
-## Contact
-
-- [saivellanki10@gmail.com](mailto:saivellanki10@gmail.com)
-- [pakenny@emplifyhealth.org](mailto:pakenny@emplifyhealth.org)
 
 ## License
 
